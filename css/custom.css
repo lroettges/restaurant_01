@@ -2,8 +2,13 @@
 body {
 	padding:0px;
 	margin:0px;
+	position:relative;
 }
-.imgOne{
+
+.navbar-brand {
+	position: fixed;
+}
+/*.imgOne{
 	z-index: -1;
 }
 .logo {
@@ -18,3 +23,13 @@ body {
 	width:100%;
 	padding: 0px;
 }
+#stickylogo_contain
+	{
+		z-index: 99;
+	}
+	
+	#stickylogo
+	{
+		position: fixed;
+		margin-left: -20px;
+	}*/

@@ -18,13 +18,45 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
 
   <body>
-    
-      
-        
-        <div class="container">
+  <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" role="pillslist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="pill" data-toggle="pill">Home</a></li>
+    <li role="presentation"><a href="#menu" aria-controls="menu" role="pill" data-toggle="pill">Menu</a></li>
+    <li role="presentation"><a href="#about" aria-controls="about" role="pill" data-toggle="pill">About</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="pill" data-toggle="pill">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="pill-content">
+    <div role="tabpanel" class="pill-pane active" id="home">
+	<!-- content for home here, includes background image there will be contact info, location, free wifi symbol, name of restaurant-->
+
+    </div>
+    <div role="tabpanel" class="pill-pane" id="menu">
+    <!-- content for menu: will be split into 3 sections - Savory, Sweet, Drinks -->
+
+    </div>
+    <div role="tabpanel" class="pill-pane" id="about">
+    <!-- info about the restaurant, there will be a section about history/culture, a section on philanthropy and working with various community service groups --> 
+
+    </div>
+    <div role="tabpanel" class="pill-pane" id="settings">...</div>
+  </div>
+   
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+ 
+       <!--  <div class="container">
         <div class="imgOne">
           <img src="images/throughWindow.jpg" alt="image of restaurant" class="img-rounded img-responsive fullimg">
         </div>
@@ -37,7 +69,16 @@
             <h1>Latin Stuff</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, massa non elementum porta, urna nibh egestas dui, nec consequat mi lorem non felis. Aliquam sit amet lectus accumsan, lobortis lacus eget, cursus magna. In non dolor rutrum, rhoncus risus finibus, ullamcorper metus.</p>
           </div>
-      </div>
+      </div> -->
+
+      <!-- <a href="#home">home</a>
+      <div id="home"></div>
+      If you are using navs to provide a navigation bar, be sure to add a role="navigation" to the most logical parent container of the <ul>, or wrap a <nav> element around the whole navigation. Do not add the role to the <ul> itself, as this would prevent it from being announced as an actual list by assistive technologies. -->
+      <!-- <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul> -->
   
 
     </div>
