@@ -54,9 +54,172 @@
     </div>
     <div role="tabpanel" class="pill-pane" id="menu">
     <!-- content for menu: will be split into 3 sections - Savory, Sweet, Drinks -->
+    <div class="container menu_items">
+    	<div class="row">
+        	<div class="col-sm-6 col-md-4">
+          		<div class="thumbnail">
+            		<img src="http://placehold.it/350x350" alt="350x350" class="img-rounded">
+           			 <div class="caption">
+              			<h3>Savory</h3>
+              	
+              	<!-- (need help getting this to work but will apply it to all after finished) -->
+              	<!-- 	modal	 -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Savory
+            </button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-savory" id="myModalLabel">Modal savory</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><table style="width:100%">
+						  <tr>
+						    <td>Loaded Nachos - Jalapeños, tomato, onion, olives, salsa, sour cream. ADD Chicken or pulled pork.</td>	
+						    <td>$</td>
+						  </tr>
+						  <tr>
+						    <td>Chicken, or cheese Quesedilla</td>	
+						    <td>$</td>
+						  </tr>
+						  <tr>
+						    <td>Nachos - Famous! Add Chicken or pulled pork. Loaded with Black Olives, Tomatoes, Japenos,</td>
+						    <td>$</td>
+						  </tr>
+						  <tr>
+						  <td>Turkey Club - Turkey, bacon, guac, lettuce, tomato, provolone, cucumber, onion</td>
+						  <td>$</td>
+						  </tr>
+						  <tr>
+						  <td>Turkey Pesto Wrap - Turkey, pesto, roasted red peppers, lettuce, olives, onion</td>
+						  <td>$</td>
+						  </tr>
+						  <tr>
+						  <td>B.L.A.S.T. - Bacon, lettuce, tomato, guacamole, Swiss </td>
+						  <td>$</td>
+						  </tr>
+						  <tr>
+						  <td>Chicken Salad Sandwich - Shane’s famous chicken salad, lettuce, tomato, sprouts, cucumber</td>
+						  <td>$</td>
+						  </tr>
 
-    </div>
-    <div role="tabpanel" class="pill-pane" id="about">
+						  <tr>
+						  <td>Veggie Wrap - Roasted red peppers, feta, pesto, lettuce, tomato, olive, onion, cucumber, sprouts</td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>Cucumber Sandwich - cucumbers galore, guacamole, provolone, lettuce, tomato, sprouts
+						  </td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>MAC n CHEESE -Three cheeses - Amazing</td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>Triple-Layer Grilled Cheese - Swiss, cheddar, provolone, and three slices of Texas toast</td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>Cartel Salad - Your choice of veggies, meat, and cheese.</td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>Build-Your-Own Sandwich - Choose one meat, one cheese, and all the veggies you want
+						<!-- Meats – Turkey Ham Chicken Pulled Pork
+						Cheeses – Provolone Cheddar Swiss Feta
+						Veggies - Lettuce Tomato Onions Olives Cucumbers Sprouts Banana Peppers
+						Extras – Bacon Roasted Red Peppers Pesto Guacamole Hummus --></td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>Chips and cheese, guac, or salsa (extra charge for more than one)</td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>Hummus and Pita - With onions, cucumbers, and olives</td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>9” Pizza - Sausage, Triple cheese, or Pepperoni</td>
+						  <td>$</td>
+						  </tr>
+
+						  <tr>
+						  <td>Breakfast sandwich - Egg and cheese on English muffin, with your choice of sausage, bacon, ham, or tomato</td>
+						  <td>$</td>
+						  </tr>
+						</table></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            		</div>
+          		</div>
+        	</div>
+        	<div class="col-sm-6 col-md-4">
+          		<div class="thumbnail">
+            		<img src="http://placehold.it/350x350" alt="350x350" class="img-rounded">
+            		<div class="caption">
+		              <h3>Sweet</h3>
+		              <p>Pellentesque nibh augue, ornare nec feugiat at, placerat et turpis. Curabitur molestie quis nisl sed fringilla. Proin ut egestas metus, at faucibus ex. Proin et pharetra erat, mattis accumsan massa.</p>
+		              <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+            		</div>
+          		</div>
+        	</div>
+        	<div class="col-sm-6 col-md-4">
+          		<div class="thumbnail">
+            		<img src="http://placehold.it/350x350" alt="350x350" class="img-rounded">
+            		<div class="caption">
+		                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Click here!
+            </button>
+
+            <!-- Modal -->
+            <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    Nice try, but there is nothing cool to look at here. 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+		              <h3>Drinks</h3>
+		              <p>Aenean suscipit mattis sagittis. Cras quis tristique tortor, vel volutpat felis. Quisque nec molestie libero. Quisque lobortis quam nec vulputate viverra. Pellentesque tincidunt lorem non gravida hendrerit. </p>
+		              <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+           			</div>
+          		</div>
+       		 </div>
+        </div> <!-- (end row) -->
+	</div> <!-- (end container menu_items) -->    
+</div> <!-- (end menu section) -->
+
+	<div role="tabpanel" class="pill-pane" id="about">
     <!-- info about the restaurant, there will be a section about history/culture, a section on philanthropy and working with various community service groups --> 
 
     </div>
