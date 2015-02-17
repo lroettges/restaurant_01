@@ -5,31 +5,9 @@ body {
 	position:relative;
 }
 
-.navbar-brand {
-	position: fixed;
-}
-/*.imgOne{
-	z-index: -1;
-}
-.logo {
-	position: fixed;
-	z-index: 1;
-}
-.home {
-
-}
-
-.fullimg {
-	width:100%;
-	padding: 0px;
-}
-#stickylogo_contain
-	{
-		z-index: 99;
-	}
-	
-	#stickylogo
-	{
-		position: fixed;
-		margin-left: -20px;
-	}*/
+ header.homeContent img.imgOne {
+ 	/*background: url(images/throughWindow.jpg);*/
+ 	width:100%;
+ 	margin:0px;
+ 	padding: 0px;
+ }
