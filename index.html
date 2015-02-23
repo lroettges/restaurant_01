@@ -51,7 +51,7 @@
     		<div class="hours">open 24/7</div>
     	</header>
     </div>
-    
+
     <div role="tabpanel" class="pill-pane" id="menu">
     <!-- content for menu: will be split into 3 sections - Savory, Sweet, Drinks -->
     <div class="container menu_items">
@@ -71,97 +71,219 @@
                     <h4 class="modal-savory" id="savoryLabel">Savory Selections</h4>
                   </div>
                   <div class="modal-body">
-                    <p><table style="width:100%">
-        						  <tr>
-        						    <td>Loaded Nachos - Jalapeños, tomato, onion, olives, salsa, sour cream. ADD Chicken or pulled pork.</td>	
-        						    <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						    <td>Chicken, or cheese Quesedilla</td>	
-        						    <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						    <td>Nachos - Famous! Add Chicken or pulled pork. Loaded with Black Olives, Tomatoes, Japenos,</td>
-        						    <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Turkey Club - Turkey, bacon, guac, lettuce, tomato, provolone, cucumber, onion</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Turkey Pesto Wrap - Turkey, pesto, roasted red peppers, lettuce, olives, onion</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>B.L.A.S.T. - Bacon, lettuce, tomato, guacamole, Swiss </td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Chicken Salad Sandwich - Shane’s famous chicken salad, lettuce, tomato, sprouts, cucumber</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Veggie Wrap - Roasted red peppers, feta, pesto, lettuce, tomato, olive, onion, cucumber, sprouts</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Cucumber Sandwich - cucumbers galore, guacamole, provolone, lettuce, tomato, sprouts
-        						  </td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>MAC n CHEESE -Three cheeses - Amazing</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Triple-Layer Grilled Cheese - Swiss, cheddar, provolone, and three slices of Texas toast</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Cartel Salad - Your choice of veggies, meat, and cheese.</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Build-Your-Own Sandwich - Choose one meat, one cheese, and all the veggies you want
-        						<!-- Meats – Turkey Ham Chicken Pulled Pork
-        						Cheeses – Provolone Cheddar Swiss Feta
-        						Veggies - Lettuce Tomato Onions Olives Cucumbers Sprouts Banana Peppers
-        						Extras – Bacon Roasted Red Peppers Pesto Guacamole Hummus --></td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Chips and cheese, guac, or salsa (extra charge for more than one)</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Hummus and Pita - With onions, cucumbers, and olives</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>9” Pizza - Sausage, Triple cheese, or Pepperoni</td>
-        						  <td>$</td>
-        						  </tr>
-
-        						  <tr>
-        						  <td>Breakfast sandwich - Egg and cheese on English muffin, with your choice of sausage, bacon, ham, or tomato</td>
-        						  <td>$</td>
-        						  </tr>
-        						</table></p>
+<!-- begin accordian  -->
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="bfastSW">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapsebfastSW" aria-expanded="true" aria-controls="collapsebfastSW">
+          Breakfast sandwich 
+        </a>
+      </h4>
+    </div>
+    <div id="collapsebfastSW" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bfastSW">
+      <div class="panel-body">
+        Egg and cheese on English muffin, with your choice of sausage, bacon, ham, or tomato
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="BLAST">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseBLAST" aria-expanded="false" aria-controls="collapseBLAST">
+          B.L.A.S.T. 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseBLAST" class="panel-collapse collapse" role="tabpanel" aria-labelledby="BLAST">
+      <div class="panel-body">
+        Bacon, lettuce, tomato, guacamole, Swiss
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="CucSW">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseCucSW" aria-expanded="false" aria-controls="collapseCucSW">
+          Cucumber Sandwich 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseCucSW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="CucSW">
+      <div class="panel-body">
+        Cucumbers galore, guacamole, provolone, lettuce, tomato, sprouts
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="TPWrap">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTPWrap" aria-expanded="false" aria-controls="collapseTPWrap">
+          Turkey Pesto Wrap 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTPWrap" class="panel-collapse collapse" role="tabpanel" aria-labelledby="TPWrap">
+      <div class="panel-body">
+        Turkey, pesto, roasted red peppers, lettuce, olives, onion
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="TClub">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTClub" aria-expanded="false" aria-controls="collapseTClub">
+          Turkey Club 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTClub" class="panel-collapse collapse" role="tabpanel" aria-labelledby="TClub">
+      <div class="panel-body">
+        Turkey, bacon, guac, lettuce, tomato, provolone, cucumber, onion
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="lNachos">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapselNachos" aria-expanded="false" aria-controls="collapselNachos">
+          Loaded Nachos
+        </a>
+      </h4>
+    </div>
+    <div id="collapselNachos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lNachos">
+      <div class="panel-body">
+        Jalapeños, tomato, onion, olives, salsa, sour cream. ADD Chicken or pulled pork.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="chickSalSW">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsechickSalSW" aria-expanded="false" aria-controls="collapsechickSalSW">
+          Chicken Salad Sandwich 
+        </a>
+      </h4>
+    </div>
+    <div id="collapsechickSalSW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chickSalSW">
+      <div class="panel-body">
+        Shane’s famous chicken salad, lettuce, tomato, sprouts, cucumber
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="quesa">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsequesa" aria-expanded="false" aria-controls="collapsequesa">
+          Quesedilla
+        </a>
+      </h4>
+    </div>
+    <div id="collapsequesa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quesa">
+      <div class="panel-body">
+        Chicken or cheese 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="tripCheese">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsetripCheese" aria-expanded="false" aria-controls="collapsetripCheese">
+          Triple-Layer Grilled Cheese 
+        </a>
+      </h4>
+    </div>
+    <div id="collapsetripCheese" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tripCheese">
+      <div class="panel-body">
+        Swiss, cheddar, provolone, and three slices of Texas toast
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="BYOS">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseBYOS" aria-expanded="false" aria-controls="collapseBYOS">
+          Build-Your-Own Sandwich 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseBYOS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="BYOS">
+      <div class="panel-body">
+      <table style="width:100%">
+        <th>Choose one meat, one cheese, and all the veggies you want</th>
+        <tr>
+          <td>Meats – Turkey Ham Chicken Pulled Pork</td>
+        </tr>
+        <tr>
+          <td>Cheeses – Provolone Cheddar Swiss Feta</td>
+        </tr>
+        <tr>
+          <td>Veggies - Lettuce Tomato Onions Olives Cucumbers Sprouts Banana Peppers</td>
+        </tr>
+        <tr>
+          <td>Extras – Bacon Roasted Red Peppers Pesto Guacamole Hummus</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="vegW">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsevegW" aria-expanded="false" aria-controls="collapsevegW">
+          Veggie Wrap 
+        </a>
+      </h4>
+    </div>
+    <div id="collapsevegW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="vegW">
+      <div class="panel-body">
+        Roasted red peppers, feta, pesto, lettuce, tomato, olive, onion, cucumber, sprouts
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="cartSal">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsecartSal" aria-expanded="false" aria-controls="collapsecartSal">
+          Cartel Salad 
+        </a>
+      </h4>
+    </div>
+    <div id="collapsecartSal" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cartSal">
+      <div class="panel-body">
+        Your choice of veggies, meat, and cheese.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="humPit">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsehumPit" aria-expanded="false" aria-controls="collapsehumPit">
+          Hummus and Pita 
+        </a>
+      </h4>
+    </div>
+    <div id="collapsehumPit" class="panel-collapse collapse" role="tabpanel" aria-labelledby="humPit">
+      <div class="panel-body">
+        With onions, cucumbers, and olives
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="pizza">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsepizza" aria-expanded="false" aria-controls="collapsepizza">
+          9” Pizza 
+        </a>
+      </h4>
+    </div>
+    <div id="collapsepizza" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pizza">
+      <div class="panel-body">
+        Sausage, Triple cheese, or Pepperoni
+      </div>
+    </div>
+  </div>
+</div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -187,97 +309,103 @@
                     <h4 class="modal-sweet" id="sweetModal">Sweet Selections</h4>
                   </div>
                   <div class="modal-body">
-                    <p><table style="width:100%">
-                      <tr>
-                        <td>Loaded Nachos - Jalapeños, tomato, onion, olives, salsa, sour cream. ADD Chicken or pulled pork.</td> 
-                        <td>$</td>
-                      </tr>
-
-                      <tr>
-                        <td>Chicken, or cheese Quesedilla</td>  
-                        <td>$</td>
-                      </tr>
-
-                      <tr>
-                        <td>Nachos - Famous! Add Chicken or pulled pork. Loaded with Black Olives, Tomatoes, Japenos,</td>
-                        <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Turkey Club - Turkey, bacon, guac, lettuce, tomato, provolone, cucumber, onion</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Turkey Pesto Wrap - Turkey, pesto, roasted red peppers, lettuce, olives, onion</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>B.L.A.S.T. - Bacon, lettuce, tomato, guacamole, Swiss </td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Chicken Salad Sandwich - Shane’s famous chicken salad, lettuce, tomato, sprouts, cucumber</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Veggie Wrap - Roasted red peppers, feta, pesto, lettuce, tomato, olive, onion, cucumber, sprouts</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Cucumber Sandwich - cucumbers galore, guacamole, provolone, lettuce, tomato, sprouts
-                      </td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>MAC n CHEESE -Three cheeses - Amazing</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Triple-Layer Grilled Cheese - Swiss, cheddar, provolone, and three slices of Texas toast</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Cartel Salad - Your choice of veggies, meat, and cheese.</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Build-Your-Own Sandwich - Choose one meat, one cheese, and all the veggies you want
-                    <!-- Meats – Turkey Ham Chicken Pulled Pork
-                    Cheeses – Provolone Cheddar Swiss Feta
-                    Veggies - Lettuce Tomato Onions Olives Cucumbers Sprouts Banana Peppers
-                    Extras – Bacon Roasted Red Peppers Pesto Guacamole Hummus --></td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Chips and cheese, guac, or salsa (extra charge for more than one)</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Hummus and Pita - With onions, cucumbers, and olives</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>9” Pizza - Sausage, Triple cheese, or Pepperoni</td>
-                      <td>$</td>
-                      </tr>
-
-                      <tr>
-                      <td>Breakfast sandwich - Egg and cheese on English muffin, with your choice of sausage, bacon, ham, or tomato</td>
-                      <td>$</td>
-                      </tr>
-                    </table></p>
+<!-- begin accordian   -->                
+                  <div class="panel-group" id="accordionSweet" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="bbs">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordionSweet" href="#collapsebbs" aria-expanded="true" aria-controls="collapsebbs">
+          Brownies & Blondies
+        </a>
+      </h4>
+    </div>
+    <div id="collapsebbs" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bbs">
+      <div class="panel-body">
+        Five different Flavor variations!
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="iceCream">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapseiceCream" aria-expanded="false" aria-controls="collapseiceCream">
+          Ice Cream 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseiceCream" class="panel-collapse collapse" role="tabpanel" aria-labelledby="iceCream">
+      <div class="panel-body">
+        24 flavors Edy’s Grand Ice Cream
+        Sizes: Kiddie Scoop, Single Scoop, Double Scoop
+        Sundaes: One- or Two-scoop Sundae or Banana Split Brownie Sundae
+        Sundae Toppings: Chocolate Sauce, White Chocolate Sauce, Caramel Sauce, Hot Fudge, Strawberry Topping, Pineapple Topping, Marshmallow Topping, Whipped Cream, Nuts, Cherries
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="cake">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsecake" aria-expanded="false" aria-controls="collapsecake">
+          Cake
+        </a>
+      </h4>
+    </div>
+    <div id="collapsecake" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cake">
+      <div class="panel-body">
+        3 layer Chocolate Cake, Strawberry Shortcake, Carrot Cake, 6 varieties of Cheesecake 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="pie">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsepie" aria-expanded="false" aria-controls="collapsepie">
+          Pie
+        </a>
+      </h4>
+    </div>
+    <div id="collapsepie" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pie">
+      <div class="panel-body">
+        Pecan homemade 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="sweetD">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsesweetD" aria-expanded="false" aria-controls="collapsesweetD">
+          Sweet Drinks
+        </a>
+      </h4>
+    </div>
+    <div id="collapsesweetD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sweetD">
+      <div class="panel-body">
+       Ice Cream Frappes (award winning) - Classic Mocha Mint Madness Caramel Dream Coffee Lover's
+       Peanut Butter Fudge Frozen Chai Black & Green Tea
+       Shakes and Malts – Any of our twenty-four flavors of ice cream
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="sweetSnacks">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsesweetSnacks" aria-expanded="false" aria-controls="collapsesweetSnacks">
+          Sweet Snacks
+        </a>
+      </h4>
+    </div>
+    <div id="collapsesweetSnacks" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sweetSnacks">
+      <div class="panel-body">
+        Gooey Butter Cake
+        Gluten Free Brownies and cupcakes
+        Cookies
+        Rice Crispy treats
+        Chocolate Covered Espresso Beans
+        Kettle Corn
+      </div>
+    </div>
+  </div>
+</div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -302,97 +430,175 @@
                       <h4 class="modal-drinks" id="drinksModal">Slurpy Selections</h4>
                     </div>
                     <div class="modal-body">
-                      <p><table style="width:100%">
-                        <tr>
-                          <td>Loaded Nachos - Jalapeños, tomato, onion, olives, salsa, sour cream. ADD Chicken or pulled pork.</td> 
-                          <td>$</td>
-                        </tr>
+<!-- begin accordian -->
+                    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Chillers 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Mocha Vanilla Caramel Cappuccino Frozen Hot Chocolate
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Fountain and Bottled Products
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Coke, Pepsi & Diet Pepsi, Diet Coke, Sprite, Mountain Dew, Red Bull, Water, Fiji Water, Fitz’s Root Beer Flavors, Naked Juices, OJ, Lemonade
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Adult Beverages 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <table style="width:100%">
+          <tr>
+            <td>Coffees with Liqueur - Irish Coffee – Bailey's & Jaimeson</td> 
+            <td>$</td>
+          </tr>
 
-                        <tr>
-                          <td>Chicken, or cheese Quesedilla</td>  
-                          <td>$</td>
-                        </tr>
+          <tr>
+            <td>Alpine Coffee – Peppermint Schnapps Jamaican Coffee – Bacardi & Kahlua</td> 
+            <td>$</td>
+          </tr>
 
-                        <tr>
-                          <td>Nachos - Famous! Add Chicken or pulled pork. Loaded with Black Olives, Tomatoes, Japenos,</td>
-                          <td>$</td>
-                        </tr>
+          <tr>
+            <td>Fragile Baby – Bailey's & Frangelico Swiss Mocha (House Special)</td> 
+            <td>$</td>
+          </tr>
 
-                        <tr>
-                        <td>Turkey Club - Turkey, bacon, guac, lettuce, tomato, provolone, cucumber, onion</td>
-                        <td>$</td>
-                        </tr>
+          <tr>
+            <td>Kahlua & Frangelico Nutty Irishman – Bailey's, Frangelico, & Jaimeson (House Special)</td> 
+            <td>$</td>
+          </tr>
 
-                        <tr>
-                        <td>Turkey Pesto Wrap - Turkey, pesto, roasted red peppers, lettuce, olives, onion</td>
-                        <td>$</td>
-                        </tr>
+          <tr>
+            <td>Crazy Cappuccino – Kahlua, Frangelico, & Bailey's </td> 
+            <td>$</td>
+          </tr>
 
-                        <tr>
-                        <td>B.L.A.S.T. - Bacon, lettuce, tomato, guacamole, Swiss </td>
-                        <td>$</td>
-                        </tr>
+          <tr>
+            <td>Amaretto Nut Mocha – DiSaronno & Frangelico</td> 
+            <td>$</td>
+          </tr>
 
-                        <tr>
-                        <td>Chicken Salad Sandwich - Shane’s famous chicken salad, lettuce, tomato, sprouts, cucumber</td>
-                        <td>$</td>
-                        </tr>
+          <tr>
+            <td>Frappes with Liqueur - Bailey's Blizzard Candy Bar Amaretto Fudge </td> 
+            <td>$</td>
+          </tr>
 
-                        <tr>
-                        <td>Veggie Wrap - Roasted red peppers, feta, pesto, lettuce, tomato, olive, onion, cucumber, sprouts</td>
-                        <td>$</td>
-                        </tr>
+          <tr>
+            <td>Vodka - Rum - Tequila - Whisky</td> 
+            <td>$</td>
+          </tr>
 
-                        <tr>
-                        <td>Cucumber Sandwich - cucumbers galore, guacamole, provolone, lettuce, tomato, sprouts
-                        </td>
-                        <td>$</td>
-                        </tr>
+          <tr>
+            <td>Disaronno Frape, shake, smoothie, colada</td> 
+            <td>$</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Brewed Coffee 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        <table style="width:100%">
+        <th>We offer a Columbian medium roast, an Ethiopian dark roast, a decaf Columbian medium roast, and a flavored coffee, which differs from day to day.</th>
+        
+        <tr>
+          <td>Cafe Au Lait – Brewed coffee with steamed milk.</td>
+          <td>$</td>
+        </tr>
+          
+          <tr>
+          <td>Café Americano – Espresso with water</td>
+          <td>$</td>
+        </tr>
+          
+          <tr>
+          <td>Cappuccino – Espresso, steamed milk, and foamed milk</td>
+          <td>$</td>
+        </tr>
+          
+        <tr>
+          <td>Café Mocha – Espresso, steamed milk, and chocolate. Also available with white chocolate.</td>
+          <td>$</td>
+        </tr>
+          
+        <tr>
+          <td>Thai Iced Coffee – Espresso, sweetened condensed milk, and ice. Very sweet, and very strong.</td>
+          <td>$</td>
+        </tr>
+        
+        <tr>
+          <td>House Specials – Our house specials are lattes with flavor combinations and an extra shot of espresso.Honey Nut Honey Vanilla Blackberry Caramel German Chocolate 
+              White Chocolate Caramel Grasshopper Hopscotch Hazilla 
+              Cafe Con Leche Butter Cream Raspberry Truffle Turtle Candy 
+              Cherry Bomb Spicy Mocha Iced Monkey Mocha Toblerone Candy
+              and more!</td>
+          <td>$</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+          Espresso
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+      <table style="width:100%">
+        <tr>
+          <td>Italian Espresso Shot – A plain, unadorned shot of espresso.</td> 
+          <td>$</td>
+        </tr>
 
-                        <tr>
-                        <td>MAC n CHEESE -Three cheeses - Amazing</td>
-                        <td>$</td>
-                        </tr>
+        <tr>
+          <td>Espresso Con Panna – An espresso shot topped with whipped cream</td> 
+          <td>$</td>
+        </tr>
 
-                        <tr>
-                        <td>Triple-Layer Grilled Cheese - Swiss, cheddar, provolone, and three slices of Texas toast</td>
-                        <td>$</td>
-                        </tr>
-
-                        <tr>
-                        <td>Cartel Salad - Your choice of veggies, meat, and cheese.</td>
-                        <td>$</td>
-                        </tr>
-
-                        <tr>
-                        <td>Build-Your-Own Sandwich - Choose one meat, one cheese, and all the veggies you want
-                      <!-- Meats – Turkey Ham Chicken Pulled Pork
-                      Cheeses – Provolone Cheddar Swiss Feta
-                      Veggies - Lettuce Tomato Onions Olives Cucumbers Sprouts Banana Peppers
-                      Extras – Bacon Roasted Red Peppers Pesto Guacamole Hummus --></td>
-                        <td>$</td>
-                        </tr>
-
-                        <tr>
-                        <td>Chips and cheese, guac, or salsa (extra charge for more than one)</td>
-                        <td>$</td>
-                        </tr>
-
-                        <tr>
-                        <td>Hummus and Pita - With onions, cucumbers, and olives</td>
-                        <td>$</td>
-                        </tr>
-
-                        <tr>
-                        <td>9” Pizza - Sausage, Triple cheese, or Pepperoni</td>
-                        <td>$</td>
-                        </tr>
-
-                        <tr>
-                        <td>Breakfast sandwich - Egg and cheese on English muffin, with your choice of sausage, bacon, ham, or tomato</td>
-                        <td>$</td>
-                        </tr>
-                      </table></p>
+        <tr>
+          <td>Espresso Macchiato – And espresso shot topped with foamed milk</td> 
+          <td>$</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
