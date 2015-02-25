@@ -39,7 +39,7 @@
     	<!-- content for home here, includes background image there will be contact info, location, free wifi symbol, hours, name of restaurant-->
     	<header class="homeContent">
     		<img src="images/throughWindow.jpg" alt="image of restaurant" class="imgOne img-responsive fullimg"></img>
-      		<div class="homeInfo col-xs-offset-2 col-xs-10 col-sm-offset-6 col-sm-6 col-md-offset-8 col-md-4">
+      		<div class="homeInfo col-xs-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-6 col-sm-6 col-md-offset-8 col-md-4 ">
           <address>
         		<a href="https://www.google.com/maps/place/2+Maryland+Plaza,+St+Louis,+MO+63108/@38.6445961,-90.261827,17z/data=!3m1!4b1!4m2!3m1!1s0x87d8b4d7d43aeca1:0x6a174e216760cc97" target="_blank">2 Maryland Plaza, St Louis, MO 63108</a>
       		</address>
@@ -56,9 +56,15 @@
 
     <div role="tabpanel" class="pill-pane" id="menu">
     <!-- content for menu: will be split into 3 sections - Savory, Sweet, Drinks -->
+    <div class="menuTitleBreak">
+      <div class="row col-xs-12"> 
+        <h1><center>Menu</center></h1>
+        <p><center>Prices only available in store (temporarily).</center></p>
+      </div>
+    </div>
       <div class="container menu_items">
     	 <div class="row">
-        <div class="col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="thumbnail">
     	<!-- 	immage button -->
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#savoryModal">
@@ -296,7 +302,7 @@
     		  </div>
         </div>
 
-      	<div class="col-sm-6 col-md-4">
+      	<div class="col-xs-12 col-sm-6 col-md-4">
         	<div class="thumbnail">
           	<!--  immage button -->
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sweetModal">
@@ -417,7 +423,7 @@
             </div>
           </div>
   		  </div>
-      	<div class="col-sm-6 col-md-4">
+      	<div class="col-xs-12 col-sm-offset-3 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4">
       		<div class="thumbnail">
         		<!--  immage button -->
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#drinksModal">
@@ -617,10 +623,15 @@
 
 	<div role="tabpanel" class="pill-pane" id="about">
     <!-- info about the restaurant, there will be a section about history/culture, a section on philanthropy and working with various community service groups --> 
+    <div class="aboutTitleBreak">
+      <div class="row col-sm-12"> 
+        <h1><center>About</center></h1>
+      </div>
+    </div>
     <div class="container aboutInfo">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2>History</h2>
+          <h2><center>History</center></h2>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
           <p><center>Coffee Cartel was founded in 1996 and is owned by Denis Gorg. We are located at the corner of Maryland Plaza and Euclid Avenue in the historic Central West End. This neighborhood is a hot spot for people of all ages seeking out St. Louis style events and culture or searching for eclectic food options and a unique ambiance. The neighborhood features victorian homes alongside european style cafes, shops, and restaurants. We find ourselves fulfilling many rolls in this part of town as a cafe, coffee shop, ice cream strore, and tea palace!</center></p> 
@@ -628,23 +639,78 @@
       </div> <!-- row end -->
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2>Events</h2>
+          <h2><center>Events</center></h2>
+
+        <!--  immage button -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#eventsModal">
+              <h5><center>Monthly Events Newsletter</center></h5>
+              <p><center>Subscribe!!!</center></p>
+            </button>
+                <!-- start modal -->
+              <div class="modal fade" id="eventsModal" tabindex="-1" role="dialog" aria-labelledby="drinksModal" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="newsletter" id="subscribe_events">Please Complete Form</h4>
+                    </div>
+                    <div class="container modal-body">
+                    <header class="modal_events_header">Fields marked with an "*" are mandatory </header>
+                      <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          *<input type="text" class="form-control firstName" placeholder="First Name">
+                        </div>
+                      </form>
+                      <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          *<input type="text" class="form-control lastName" placeholder="Last Name">
+                        </div>
+                      </form>
+                      <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          *<input type="text" class="form-control customeremail" placeholder="email@gmail.com">
+                        </div>
+                      </form>
+                      <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          <input type="text" class="form-control customerphone" placeholder="(333) 333-3333">
+                        </div>
+                      </form>
+                      <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">Enter your birthday for special birthday gifts, offers, and discounts!<br>
+                          <input type="text" class="form-control customeremail" placeholder="03/25/1985">
+                        </div> 
+                      </form>
+                      <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">Enter recomendations for what type of events you would like to see or reasons why you are subscribing to this form. <br>
+                          <input type="text" class="form-control customeremail" placeholder="I'd like to see...">
+                        </div> 
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
         </div>
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
-          <p><center>Owner Denis Gorg also owns an events management company, Integrated Marketing Solutions and the spirit of entertainment certainly caries over into Coffee Cartel. We proudly host local musicians, fundraiser events, monopoly tournaments, and all sorts of other events. To see upcoming events check out our Facebook page. If you are interested in having an event at Coffee Cartel please contact...</center></p> 
+          <p><center>Owner Denis Gorg also owns an events management company, Integrated Marketing Solutions and the spirit of entertainment certainly caries over into Coffee Cartel. We proudly host local musicians, fundraiser events, monopoly tournaments, and all sorts of other events. To see upcoming events and find out how to get involved check out our <a rel="nofollow" href="https://www.facebook.com/pages/Coffee-Cartel/170181316633" class="link-facebook_events">Facebook page<span class="socialmedia"></span></a> or subscribe to our monthly electronic events newsletter. If you are interested in having an event at Coffee Cartel please <a href="mailto:dennis@thecoffeecartel.com" class="link-contactus">contact us.</a> </center> </p> 
         </div>
       </div> <!-- row end -->
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2>Philanthropy</h2>
+          <h2><center>Philanthropy</center></h2>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
-          <p><center>We are a locally owned and run business hence our motto: Coffee Cartel - its a St. Louis Thing! We strive to support other local businesses and the community that continually supports us. In effort to support a wide variety of charity organizations and to give back to the St. Louis Community, we have hosted fundraisers, made donated to, and sponsored over 290 groups in 2014 alone. If you are seeking our help please contact us at http://charity@thecoffeecartel.com/. We request that you do not call the store for this purpose. </center></p> 
+          <p><center>We are a locally owned and run business hence our motto: Coffee Cartel - its a St. Louis Thing! We strive to support other local businesses and the community that continually supports us. In effort to support a wide variety of charity organizations and to give back to the St. Louis Community, we have hosted fundraisers, donated to, and sponsored over 290 groups in 2014 alone. If you are seeking our help please contact us at <a href="mailto:http://charity@thecoffeecartel.com/" class="link-charityContact">http://charity@thecoffeecartel.com/</a>. We request that you do not call the store for this purpose. </center></p> 
         </div>
       </div> <!-- row end -->
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2>General & Awards</h2>
+          <h2><center>General & Awards</center></h2>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
           <p><center>The Coffee Cartel is open 24 hour per day, 7 days a week, and we never close. We are open every holiday thanks to the dedicated work of our team members. Cartel provides free wireless internet, free high speed plug ins. With 240 seats and a large patio, there’s most always a place to socialize and capture the atmosphere of the neighborhood and the people here.</center></p> 
@@ -654,40 +720,24 @@
      </div> <!-- container end -->
     </div> <!-- pill-pane end -->
 
-    <div role="tabpanel" class="pill-pane" id="shop">...</div>
+    <div role="tabpanel" class="pill-pane" id="shop">
+      <div class="container shopinfo">
+      <div class="row">
+      <div class="col-sm-12">
+        <h1><center>Shop!</center></h1>
+      </div>
+        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
+          <h2><center>...</center></h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
+          <p><center><a rel="nofollow" href="https://squareup.com/market/coffee-cartel-ltd" class="link-store"><img src="images/gift-cert-icon-large2.png" alt="gift card image"><span class="link-gifts"></span></a></center></p> 
+        </div>
+      </div> <!-- row end -->
+    </div>
   </div>
    
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      
  </div>
-       <!--  <div class="container">
-        <div class="imgOne">
-          <img src="images/throughWindow.jpg" alt="image of restaurant" class="img-rounded img-responsive fullimg">
-        </div>
-        
-        <div class="logo">
-          <img src="images/logo_transparent.png" alt="logo">
-        </div>
-        <div class="row">
-          <div class="jumbotron col-xs-12 home">
-            <h1>Latin Stuff</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, massa non elementum porta, urna nibh egestas dui, nec consequat mi lorem non felis. Aliquam sit amet lectus accumsan, lobortis lacus eget, cursus magna. In non dolor rutrum, rhoncus risus finibus, ullamcorper metus.</p>
-          </div>
-      </div> -->
-
-      <!-- <a href="#home">home</a>
-      <div id="home"></div>
-      If you are using navs to provide a navigation bar, be sure to add a role="navigation" to the most logical parent container of the <ul>, or wrap a <nav> element around the whole navigation. Do not add the role to the <ul> itself, as this would prevent it from being announced as an actual list by assistive technologies. -->
-      <!-- <ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul> -->
-  
 
     </div>
 

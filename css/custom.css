@@ -15,10 +15,15 @@ div.container{
 	margin:0px;
 	width:100%;
 }*/
-#home header div {
-	position:relative;
-	bottom: 0px;
+
+#home header div.homeInfo {
+	position:absolute;
+	top: 4%;
+	background-color: rgba(100, 50, 30, .65);
+	color: white;
+	
 }
+
  header.homeContent img.imgOne {
  	width:100%;
  	margin:0px;
