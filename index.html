@@ -20,589 +20,282 @@
 
   </head>
 
-  <body>
-  <div role="tabpanel"> <!-- maybe wrong!??? -->
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-pills" role="pillslist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="pill" data-toggle="pill">Home</a></li>
-    <li role="presentation"><a href="#menu" aria-controls="menu" role="pill" data-toggle="pill">Menu</a></li>
-    <li role="presentation"><a href="#about" aria-controls="about" role="pill" data-toggle="pill">About</a></li>
-    <li role="presentation"><a href="#shop" aria-controls="shop" role="pill" data-toggle="pill">Shop</a></li>
+  <body >
+  <a name="top"></a>
+<div class="nav_bar" role="pillpanel">
+<ul class="nav nav-pills" role="pilllist">
+    <li role="presentation"><a href="#home" aria-controls="home" role="pill" >Home</a></li>
+    <li role="presentation"><a href="#menu" aria-controls="profile" role="pill" >Menu</a></li>
+    <li role="presentation"><a href="#about" aria-controls="messages" role="pill" >About</a></li>
+    <li role="presentation"><a href="#shop" aria-controls="settings" role="pill" >Shop</a></li>
+    <p class="navbar-text">Coffee Cartel - It's A Saint Louis Thing!</p>
   </ul>
 
-  <div class="container">
+  <!-- <a href="#home"> Home </a>
+  <a href="#menu"> Menu </a>
+  <a href="#about"> About </a>
+  <a href="#shop"> Shop </a> -->
+</div>
+  
 
-  <!-- Pill panes -->
-  <div class="pill-content">
-    <div role="tabpanel" class="pill-pane active" id="home">
-    	<!-- content for home here, includes background image there will be contact info, location, free wifi symbol, hours, name of restaurant-->
-    	<header class="homeContent">
-    		<img src="images/throughWindow.jpg" alt="image of restaurant" class="imgOne img-responsive fullimg"></img>
-      		<div class="homeInfo col-xs-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-6 col-sm-6 col-md-offset-8 col-md-4 ">
-          <address>
-        		<a href="https://www.google.com/maps/place/2+Maryland+Plaza,+St+Louis,+MO+63108/@38.6445961,-90.261827,17z/data=!3m1!4b1!4m2!3m1!1s0x87d8b4d7d43aeca1:0x6a174e216760cc97" target="_blank">2 Maryland Plaza, St Louis, MO 63108</a>
-      		</address>
-      		
-          <a rel="nofollow" href="https://www.facebook.com/pages/Coffee-Cartel/170181316633" class="link-facebook"><img src="images/facebook_icon.png" alt="facebook glyphcon"><span class="socialmedia"></span></a>
-      		<a rel="nofollow" href="https://twitter.com/CoffeeCartelSTL" class="link-twitter"><img src="images/twittericon.png" alt="twitter glyphcon"><span class="socialmedia"></span></a>
-      		<a href="mailto:dennis@thecoffeecartel.com" class="link-email"><img src="images/email_icon.png" alt="email icon"><span class="socialmedia"></a>
-      		<div class="phone"><span>(314) 454-0000 </span></div>
-      		<div class="wifi">free wifi</div>
-      		<div class="hours">open 24/7</div>
-          </div>
-    	</header>
-    </div>
-
-    <div role="tabpanel" class="pill-pane" id="menu">
-    <!-- content for menu: will be split into 3 sections - Savory, Sweet, Drinks -->
-    <div class="menuTitleBreak">
-      <div class="row col-xs-12"> 
-        <h1><center>Menu</center></h1>
-        <p><center>Prices only available in store (temporarily).</center></p>
+    <!-- Pill panes -->
+    <div class="pill-content">
+      <div role="tabpanel" class="pill-pane active" id="home">
+      <a name="home"></a>
+      	<!-- content for home here, includes background image there will be contact info, location, free wifi symbol, hours, name of restaurant-->
+      	<header class="homeContent">
+      		<img src="images/throughWindow.jpg" alt="image of restaurant" class="imgOne img-responsive fullimg"></img>
+        		<div class="homeInfo col-xs-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-6 col-sm-6 col-md-offset-8 col-md-4 ">
+            <address>
+          		<a href="https://www.google.com/maps/place/2+Maryland+Plaza,+St+Louis,+MO+63108/@38.6445961,-90.261827,17z/data=!3m1!4b1!4m2!3m1!1s0x87d8b4d7d43aeca1:0x6a174e216760cc97" target="_blank">2 Maryland Plaza, St Louis, MO 63108</a>
+        		</address>
+        		
+            <a rel="nofollow" href="https://www.facebook.com/pages/Coffee-Cartel/170181316633" class="link-facebook"><img src="images/facebook_icon.png" alt="facebook glyphcon"><span class="socialmedia"></span></a>
+        		<a rel="nofollow" href="https://twitter.com/CoffeeCartelSTL" class="link-twitter"><img src="images/twittericon.png" alt="twitter glyphcon"><span class="socialmedia"></span></a>
+        		<a href="mailto:dennis@thecoffeecartel.com" class="link-email"><img src="images/email_icon.png" alt="email icon"><span class="socialmedia"></span></a>
+        		<div class="phone"><span>(314) 454-0000 </span></div>
+        		<div class="wifi">free wifi</div>
+        		<div class="hours">open 24/7</div>
+            </div>
+      	</header>
       </div>
-    </div>
-      <div class="container menu_items">
-    	 <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="thumbnail">
-    	<!-- 	immage button -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#savoryModal">
-              <img src="http://placehold.it/350x350" alt="350x350" class="imgTwo img-rounded img-responsive fullimg">
-            </button>
-            <!-- start modal -->
-            <div class="modal fade" id="savoryModal" tabindex="-1" role="dialog" aria-labelledby="savoryModal" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-savory" id="savoryLabel">Savory Selections</h4>
-                  </div>
-                  <div class="modal-body">
-<!-- begin accordian  -->
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="bfastSW">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapsebfastSW" aria-expanded="true" aria-controls="collapsebfastSW">
-                              Breakfast sandwich 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsebfastSW" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bfastSW">
-                          <div class="panel-body">
-                            Egg and cheese on English muffin, with your choice of sausage, bacon, ham, or tomato
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="BLAST">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseBLAST" aria-expanded="false" aria-controls="collapseBLAST">
-                              B.L.A.S.T. 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseBLAST" class="panel-collapse collapse" role="tabpanel" aria-labelledby="BLAST">
-                          <div class="panel-body">
-                            Bacon, lettuce, tomato, guacamole, Swiss
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="CucSW">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseCucSW" aria-expanded="false" aria-controls="collapseCucSW">
-                              Cucumber Sandwich 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseCucSW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="CucSW">
-                          <div class="panel-body">
-                            Cucumbers galore, guacamole, provolone, lettuce, tomato, sprouts
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="TPWrap">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTPWrap" aria-expanded="false" aria-controls="collapseTPWrap">
-                              Turkey Pesto Wrap 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseTPWrap" class="panel-collapse collapse" role="tabpanel" aria-labelledby="TPWrap">
-                          <div class="panel-body">
-                            Turkey, pesto, roasted red peppers, lettuce, olives, onion
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="TClub">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTClub" aria-expanded="false" aria-controls="collapseTClub">
-                              Turkey Club 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseTClub" class="panel-collapse collapse" role="tabpanel" aria-labelledby="TClub">
-                          <div class="panel-body">
-                            Turkey, bacon, guac, lettuce, tomato, provolone, cucumber, onion
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="lNachos">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapselNachos" aria-expanded="false" aria-controls="collapselNachos">
-                              Loaded Nachos
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapselNachos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lNachos">
-                          <div class="panel-body">
-                            Jalapeños, tomato, onion, olives, salsa, sour cream. ADD Chicken or pulled pork.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="chickSalSW">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsechickSalSW" aria-expanded="false" aria-controls="collapsechickSalSW">
-                              Chicken Salad Sandwich 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsechickSalSW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chickSalSW">
-                          <div class="panel-body">
-                            Shane’s famous chicken salad, lettuce, tomato, sprouts, cucumber
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="quesa">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsequesa" aria-expanded="false" aria-controls="collapsequesa">
-                              Quesedilla
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsequesa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quesa">
-                          <div class="panel-body">
-                            Chicken or cheese 
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="tripCheese">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsetripCheese" aria-expanded="false" aria-controls="collapsetripCheese">
-                              Triple-Layer Grilled Cheese 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsetripCheese" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tripCheese">
-                          <div class="panel-body">
-                            Swiss, cheddar, provolone, and three slices of Texas toast
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="BYOS">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseBYOS" aria-expanded="false" aria-controls="collapseBYOS">
-                              Build-Your-Own Sandwich 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseBYOS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="BYOS">
-                          <div class="panel-body">
-                          <table style="width:100%">
-                            <th>Choose one meat, one cheese, and all the veggies you want</th>
-                            <tr>
-                              <td>Meats – Turkey Ham Chicken Pulled Pork</td>
-                            </tr>
-                            <tr>
-                              <td>Cheeses – Provolone Cheddar Swiss Feta</td>
-                            </tr>
-                            <tr>
-                              <td>Veggies - Lettuce Tomato Onions Olives Cucumbers Sprouts Banana Peppers</td>
-                            </tr>
-                            <tr>
-                              <td>Extras – Bacon Roasted Red Peppers Pesto Guacamole Hummus</td>
-                            </tr>
-                          </table>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="vegW">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsevegW" aria-expanded="false" aria-controls="collapsevegW">
-                              Veggie Wrap 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsevegW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="vegW">
-                          <div class="panel-body">
-                            Roasted red peppers, feta, pesto, lettuce, tomato, olive, onion, cucumber, sprouts
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="cartSal">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsecartSal" aria-expanded="false" aria-controls="collapsecartSal">
-                              Cartel Salad 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsecartSal" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cartSal">
-                          <div class="panel-body">
-                            Your choice of veggies, meat, and cheese.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="humPit">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsehumPit" aria-expanded="false" aria-controls="collapsehumPit">
-                              Hummus and Pita 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsehumPit" class="panel-collapse collapse" role="tabpanel" aria-labelledby="humPit">
-                          <div class="panel-body">
-                            With onions, cucumbers, and olives
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="pizza">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsepizza" aria-expanded="false" aria-controls="collapsepizza">
-                              9” Pizza 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsepizza" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pizza">
-                          <div class="panel-body">
-                            Sausage, Triple cheese, or Pepperoni
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-    		  </div>
-        </div>
 
-      	<div class="col-xs-12 col-sm-6 col-md-4">
-        	<div class="thumbnail">
-          	<!--  immage button -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sweetModal">
-              <img src="http://placehold.it/350x350" alt="350x350" class="imgThree img-rounded img-responsive fullimg">
-            </button>
-            <!-- start modal -->
-            <div class="modal fade" id="sweetModal" tabindex="-1" role="dialog" aria-labelledby="sweetModal" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-sweet" id="sweetModal">Sweet Selections</h4>
-                  </div>
-                  <div class="modal-body">
-<!-- begin accordian   -->                
-                    <div class="panel-group" id="accordionSweet" role="tablist" aria-multiselectable="true">
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="bbs">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordionSweet" href="#collapsebbs" aria-expanded="true" aria-controls="collapsebbs">
-                              Brownies & Blondies
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsebbs" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bbs">
-                          <div class="panel-body">
-                            Five different Flavor variations!
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="iceCream">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapseiceCream" aria-expanded="false" aria-controls="collapseiceCream">
-                              Ice Cream 
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseiceCream" class="panel-collapse collapse" role="tabpanel" aria-labelledby="iceCream">
-                          <div class="panel-body">
-                            24 flavors Edy’s Grand Ice Cream
-                            Sizes: Kiddie Scoop, Single Scoop, Double Scoop
-                            Sundaes: One- or Two-scoop Sundae or Banana Split Brownie Sundae
-                            Sundae Toppings: Chocolate Sauce, White Chocolate Sauce, Caramel Sauce, Hot Fudge, Strawberry Topping, Pineapple Topping, Marshmallow Topping, Whipped Cream, Nuts, Cherries
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="cake">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsecake" aria-expanded="false" aria-controls="collapsecake">
-                              Cake
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsecake" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cake">
-                          <div class="panel-body">
-                            3 layer Chocolate Cake, Strawberry Shortcake, Carrot Cake, 6 varieties of Cheesecake 
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="pie">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsepie" aria-expanded="false" aria-controls="collapsepie">
-                              Pie
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsepie" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pie">
-                          <div class="panel-body">
-                            Pecan homemade 
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="sweetD">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsesweetD" aria-expanded="false" aria-controls="collapsesweetD">
-                              Sweet Drinks
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsesweetD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sweetD">
-                          <div class="panel-body">
-                           Ice Cream Frappes (award winning) - Classic Mocha Mint Madness Caramel Dream Coffee Lover's
-                           Peanut Butter Fudge Frozen Chai Black & Green Tea
-                           Shakes and Malts – Any of our twenty-four flavors of ice cream
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="sweetSnacks">
-                          <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsesweetSnacks" aria-expanded="false" aria-controls="collapsesweetSnacks">
-                              Sweet Snacks
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapsesweetSnacks" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sweetSnacks">
-                          <div class="panel-body">
-                            Gooey Butter Cake
-                            Gluten Free Brownies and cupcakes
-                            Cookies
-                            Rice Crispy treats
-                            Chocolate Covered Espresso Beans
-                            Kettle Corn
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  		  </div>
-      	<div class="col-xs-12 col-sm-offset-3 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4">
-      		<div class="thumbnail">
-        		<!--  immage button -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#drinksModal">
-              <img src="http://placehold.it/350x350" alt="350x350" class="imgFour img-rounded img-responsive fullimg">
-            </button>
-                <!-- start modal -->
-              <div class="modal fade" id="drinksModal" tabindex="-1" role="dialog" aria-labelledby="drinksModal" aria-hidden="true">
+      <div role="tabpanel" class="pill-pane" id="menu">
+      <a name="menu"></a>
+      <!-- content for menu: will be split into 3 sections - Savory, Sweet, Drinks -->
+      <div class="menuTitleBreak">
+        <div class="row col-xs-12"> 
+          <h1><center>Menu</center></h1>
+          <p><center>Prices only available in store (temporarily).</center></p>
+        </div>
+      </div>
+        <div class="container menu_items">
+      	 <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+            <h2><center>Savory</center></h2>
+      	<!-- 	immage button -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#savoryModal">
+                <img src="http://placehold.it/350x350" alt="350x350" class="imgTwo img-rounded img-responsive fullimg">
+              </button>
+              <!-- start modal -->
+              <div class="modal fade" id="savoryModal" tabindex="-1" role="dialog" aria-labelledby="savoryModal" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-drinks" id="drinksModal">Slurpy Selections</h4>
+                      <h4 class="modal-savory" id="savoryLabel">Savory Selections</h4>
                     </div>
                     <div class="modal-body">
-<!-- begin accordian -->
-                      <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+  <!-- begin accordian  -->
+                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="headingOne">
+                          <div class="panel-heading" role="tab" id="bfastSW">
                             <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion3" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Chillers 
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapsebfastSW" aria-expanded="true" aria-controls="collapsebfastSW">
+                                Breakfast sandwich 
                               </a>
                             </h4>
                           </div>
-                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div id="collapsebfastSW" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bfastSW">
                             <div class="panel-body">
-                              Mocha Vanilla Caramel Cappuccino Frozen Hot Chocolate
+                              Egg and cheese on English muffin, with your choice of sausage, bacon, ham, or tomato
                             </div>
                           </div>
                         </div>
                         <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="headingTwo">
+                          <div class="panel-heading" role="tab" id="BLAST">
                             <h4 class="panel-title">
-                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Fountain and Bottled Products
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseBLAST" aria-expanded="false" aria-controls="collapseBLAST">
+                                B.L.A.S.T. 
                               </a>
                             </h4>
                           </div>
-                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div id="collapseBLAST" class="panel-collapse collapse" role="tabpanel" aria-labelledby="BLAST">
                             <div class="panel-body">
-                              Coke, Pepsi & Diet Pepsi, Diet Coke, Sprite, Mountain Dew, Red Bull, Water, Fiji Water, Fitz’s Root Beer Flavors, Naked Juices, OJ, Lemonade
+                              Bacon, lettuce, tomato, guacamole, Swiss
                             </div>
                           </div>
                         </div>
                         <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="headingThree">
+                          <div class="panel-heading" role="tab" id="CucSW">
                             <h4 class="panel-title">
-                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Adult Beverages 
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseCucSW" aria-expanded="false" aria-controls="collapseCucSW">
+                                Cucumber Sandwich 
                               </a>
                             </h4>
                           </div>
-                          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div id="collapseCucSW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="CucSW">
                             <div class="panel-body">
-                              <table style="width:100%">
-                                <tr>
-                                  <td>Coffees with Liqueur - Irish Coffee – Bailey's & Jaimeson</td> 
-                                  <td>$</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Alpine Coffee – Peppermint Schnapps Jamaican Coffee – Bacardi & Kahlua</td> 
-                                  <td>$</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Fragile Baby – Bailey's & Frangelico Swiss Mocha (House Special)</td> 
-                                  <td>$</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Kahlua & Frangelico Nutty Irishman – Bailey's, Frangelico, & Jaimeson (House Special)</td> 
-                                  <td>$</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Crazy Cappuccino – Kahlua, Frangelico, & Bailey's </td> 
-                                  <td>$</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Amaretto Nut Mocha – DiSaronno & Frangelico</td> 
-                                  <td>$</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Frappes with Liqueur - Bailey's Blizzard Candy Bar Amaretto Fudge </td> 
-                                  <td>$</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Vodka - Rum - Tequila - Whisky</td> 
-                                  <td>$</td>
-                                </tr>
-
-                                <tr>
-                                  <td>Disaronno Frape, shake, smoothie, colada</td> 
-                                  <td>$</td>
-                                </tr>
-                              </table>
+                              Cucumbers galore, guacamole, provolone, lettuce, tomato, sprouts
                             </div>
                           </div>
                         </div>
                         <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="headingFour">
+                          <div class="panel-heading" role="tab" id="TPWrap">
                             <h4 class="panel-title">
-                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Brewed Coffee 
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTPWrap" aria-expanded="false" aria-controls="collapseTPWrap">
+                                Turkey Pesto Wrap 
                               </a>
                             </h4>
                           </div>
-                          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                          <div id="collapseTPWrap" class="panel-collapse collapse" role="tabpanel" aria-labelledby="TPWrap">
                             <div class="panel-body">
-                              <table style="width:100%">
-                              <th>We offer a Columbian medium roast, an Ethiopian dark roast, a decaf Columbian medium roast, and a flavored coffee, which differs from day to day.</th>
-                              
-                              <tr>
-                                <td>Cafe Au Lait – Brewed coffee with steamed milk.</td>
-                                <td>$</td>
-                              </tr>
-                                
-                                <tr>
-                                <td>Café Americano – Espresso with water</td>
-                                <td>$</td>
-                              </tr>
-                                
-                                <tr>
-                                <td>Cappuccino – Espresso, steamed milk, and foamed milk</td>
-                                <td>$</td>
-                              </tr>
-                                
-                              <tr>
-                                <td>Café Mocha – Espresso, steamed milk, and chocolate. Also available with white chocolate.</td>
-                                <td>$</td>
-                              </tr>
-                                
-                              <tr>
-                                <td>Thai Iced Coffee – Espresso, sweetened condensed milk, and ice. Very sweet, and very strong.</td>
-                                <td>$</td>
-                              </tr>
-                              
-                              <tr>
-                                <td>House Specials – Our house specials are lattes with flavor combinations and an extra shot of espresso.Honey Nut Honey Vanilla Blackberry Caramel German Chocolate 
-                                    White Chocolate Caramel Grasshopper Hopscotch Hazilla 
-                                    Cafe Con Leche Butter Cream Raspberry Truffle Turtle Candy 
-                                    Cherry Bomb Spicy Mocha Iced Monkey Mocha Toblerone Candy
-                                    and more!</td>
-                                <td>$</td>
-                              </tr>
-                              </table>
+                              Turkey, pesto, roasted red peppers, lettuce, olives, onion
                             </div>
                           </div>
                         </div>
                         <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="headingFive">
+                          <div class="panel-heading" role="tab" id="TClub">
                             <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion3" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Espresso
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTClub" aria-expanded="false" aria-controls="collapseTClub">
+                                Turkey Club 
                               </a>
                             </h4>
                           </div>
-                          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                          <div id="collapseTClub" class="panel-collapse collapse" role="tabpanel" aria-labelledby="TClub">
+                            <div class="panel-body">
+                              Turkey, bacon, guac, lettuce, tomato, provolone, cucumber, onion
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="lNachos">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapselNachos" aria-expanded="false" aria-controls="collapselNachos">
+                                Loaded Nachos
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapselNachos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lNachos">
+                            <div class="panel-body">
+                              Jalapeños, tomato, onion, olives, salsa, sour cream. ADD Chicken or pulled pork.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="chickSalSW">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsechickSalSW" aria-expanded="false" aria-controls="collapsechickSalSW">
+                                Chicken Salad Sandwich 
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsechickSalSW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="chickSalSW">
+                            <div class="panel-body">
+                              Shane’s famous chicken salad, lettuce, tomato, sprouts, cucumber
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="quesa">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsequesa" aria-expanded="false" aria-controls="collapsequesa">
+                                Quesedilla
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsequesa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quesa">
+                            <div class="panel-body">
+                              Chicken or cheese 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="tripCheese">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsetripCheese" aria-expanded="false" aria-controls="collapsetripCheese">
+                                Triple-Layer Grilled Cheese 
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsetripCheese" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tripCheese">
+                            <div class="panel-body">
+                              Swiss, cheddar, provolone, and three slices of Texas toast
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="BYOS">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseBYOS" aria-expanded="false" aria-controls="collapseBYOS">
+                                Build-Your-Own Sandwich 
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseBYOS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="BYOS">
                             <div class="panel-body">
                             <table style="width:100%">
+                              <th>Choose one meat, one cheese, and all the veggies you want</th>
                               <tr>
-                                <td>Italian Espresso Shot – A plain, unadorned shot of espresso.</td> 
-                                <td>$</td>
+                                <td>Meats – Turkey Ham Chicken Pulled Pork</td>
                               </tr>
-
                               <tr>
-                                <td>Espresso Con Panna – An espresso shot topped with whipped cream</td> 
-                                <td>$</td>
+                                <td>Cheeses – Provolone Cheddar Swiss Feta</td>
                               </tr>
-
                               <tr>
-                                <td>Espresso Macchiato – And espresso shot topped with foamed milk</td> 
-                                <td>$</td>
+                                <td>Veggies - Lettuce Tomato Onions Olives Cucumbers Sprouts Banana Peppers</td>
+                              </tr>
+                              <tr>
+                                <td>Extras – Bacon Roasted Red Peppers Pesto Guacamole Hummus</td>
                               </tr>
                             </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="vegW">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsevegW" aria-expanded="false" aria-controls="collapsevegW">
+                                Veggie Wrap 
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsevegW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="vegW">
+                            <div class="panel-body">
+                              Roasted red peppers, feta, pesto, lettuce, tomato, olive, onion, cucumber, sprouts
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="cartSal">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsecartSal" aria-expanded="false" aria-controls="collapsecartSal">
+                                Cartel Salad 
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsecartSal" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cartSal">
+                            <div class="panel-body">
+                              Your choice of veggies, meat, and cheese.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="humPit">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsehumPit" aria-expanded="false" aria-controls="collapsehumPit">
+                                Hummus and Pita 
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsehumPit" class="panel-collapse collapse" role="tabpanel" aria-labelledby="humPit">
+                            <div class="panel-body">
+                              With onions, cucumbers, and olives
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="pizza">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsepizza" aria-expanded="false" aria-controls="collapsepizza">
+                                9” Pizza 
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsepizza" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pizza">
+                            <div class="panel-body">
+                              Sausage, Triple cheese, or Pepperoni
                             </div>
                           </div>
                         </div>
@@ -614,132 +307,547 @@
                   </div>
                 </div>
               </div>
-     			  </div>
-    		  </div>
-        </div> 
-      </div><!-- (end row) -->
-    </div> <!-- (end container menu_items) -->    
-  <!-- </div>  --><!-- (end menu pill pane section) -->
+            </div>
+          </div>
 
-	<div role="tabpanel" class="pill-pane" id="about">
-    <!-- info about the restaurant, there will be a section about history/culture, a section on philanthropy and working with various community service groups --> 
-    <div class="aboutTitleBreak">
-      <div class="row col-sm-12"> 
-        <h1><center>About</center></h1>
-      </div>
-    </div>
-    <div class="container aboutInfo">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2><center>History</center></h2>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
-          <p><center>Coffee Cartel was founded in 1996 and is owned by Denis Gorg. We are located at the corner of Maryland Plaza and Euclid Avenue in the historic Central West End. This neighborhood is a hot spot for people of all ages seeking out St. Louis style events and culture or searching for eclectic food options and a unique ambiance. The neighborhood features victorian homes alongside european style cafes, shops, and restaurants. We find ourselves fulfilling many rolls in this part of town as a cafe, coffee shop, ice cream strore, and tea palace!</center></p> 
-        </div>
-      </div> <!-- row end -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2><center>Events</center></h2>
-
-        <!--  immage button -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#eventsModal">
-              <h5><center>Monthly Events Newsletter</center></h5>
-              <p><center>Subscribe!!!</center></p>
-            </button>
-                <!-- start modal -->
-              <div class="modal fade" id="eventsModal" tabindex="-1" role="dialog" aria-labelledby="drinksModal" aria-hidden="true">
+        	<div class="col-xs-12 col-sm-6 col-md-4">
+          	<div class="thumbnail">
+            <h2><center>Sweet</center></h2>
+            	<!--  immage button -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sweetModal">
+                <img src="http://placehold.it/350x350" alt="350x350" class="imgThree img-rounded img-responsive fullimg">
+              </button>
+              <!-- start modal -->
+              <div class="modal fade" id="sweetModal" tabindex="-1" role="dialog" aria-labelledby="sweetModal" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="newsletter" id="subscribe_events">Please Complete Form</h4>
+                      <h4 class="modal-sweet" id="sweetModal">Sweet Selections</h4>
                     </div>
-                    <div class="container modal-body">
-                    <header class="modal_events_header">Fields marked with an "*" are mandatory </header>
-                      <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                          *<input type="text" class="form-control firstName" placeholder="First Name">
+                    <div class="modal-body">
+  <!-- begin accordian   -->                
+                      <div class="panel-group" id="accordionSweet" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="bbs">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordionSweet" href="#collapsebbs" aria-expanded="true" aria-controls="collapsebbs">
+                                Brownies & Blondies
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsebbs" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bbs">
+                            <div class="panel-body">
+                              Five different Flavor variations!
+                            </div>
+                          </div>
                         </div>
-                      </form>
-                      <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                          *<input type="text" class="form-control lastName" placeholder="Last Name">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="iceCream">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapseiceCream" aria-expanded="false" aria-controls="collapseiceCream">
+                                Ice Cream 
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseiceCream" class="panel-collapse collapse" role="tabpanel" aria-labelledby="iceCream">
+                            <div class="panel-body">
+                              24 flavors Edy’s Grand Ice Cream
+                              Sizes: Kiddie Scoop, Single Scoop, Double Scoop
+                              Sundaes: One- or Two-scoop Sundae or Banana Split Brownie Sundae
+                              Sundae Toppings: Chocolate Sauce, White Chocolate Sauce, Caramel Sauce, Hot Fudge, Strawberry Topping, Pineapple Topping, Marshmallow Topping, Whipped Cream, Nuts, Cherries
+                            </div>
+                          </div>
                         </div>
-                      </form>
-                      <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                          *<input type="text" class="form-control customeremail" placeholder="email@gmail.com">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="cake">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsecake" aria-expanded="false" aria-controls="collapsecake">
+                                Cake
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsecake" class="panel-collapse collapse" role="tabpanel" aria-labelledby="cake">
+                            <div class="panel-body">
+                              3 layer Chocolate Cake, Strawberry Shortcake, Carrot Cake, 6 varieties of Cheesecake 
+                            </div>
+                          </div>
                         </div>
-                      </form>
-                      <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                          <input type="text" class="form-control customerphone" placeholder="(333) 333-3333">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="pie">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsepie" aria-expanded="false" aria-controls="collapsepie">
+                                Pie
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsepie" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pie">
+                            <div class="panel-body">
+                              Pecan homemade 
+                            </div>
+                          </div>
                         </div>
-                      </form>
-                      <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">Enter your birthday for special birthday gifts, offers, and discounts!<br>
-                          <input type="text" class="form-control customeremail" placeholder="03/25/1985">
-                        </div> 
-                      </form>
-                      <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">Enter recomendations for what type of events you would like to see or reasons why you are subscribing to this form. <br>
-                          <input type="text" class="form-control customeremail" placeholder="I'd like to see...">
-                        </div> 
-                      </form>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="sweetD">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsesweetD" aria-expanded="false" aria-controls="collapsesweetD">
+                                Sweet Drinks
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsesweetD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sweetD">
+                            <div class="panel-body">
+                             Ice Cream Frappes (award winning) - Classic Mocha Mint Madness Caramel Dream Coffee Lover's
+                             Peanut Butter Fudge Frozen Chai Black & Green Tea
+                             Shakes and Malts – Any of our twenty-four flavors of ice cream
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="sweetSnacks">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordionSweet" href="#collapsesweetSnacks" aria-expanded="false" aria-controls="collapsesweetSnacks">
+                                Sweet Snacks
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapsesweetSnacks" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sweetSnacks">
+                            <div class="panel-body">
+                              Gooey Butter Cake
+                              Gluten Free Brownies and cupcakes
+                              Cookies
+                              Rice Crispy treats
+                              Chocolate Covered Espresso Beans
+                              Kettle Corn
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="submit" class="btn btn-default">Submit</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+    		  </div>
+        	<div class="col-xs-12 col-sm-offset-3 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4">
+        		<div class="thumbnail">
+            <h2><center>Sips</center></h2>
+          		<!--  immage button -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#drinksModal">
+                <img src="http://placehold.it/350x350" alt="350x350" class="imgFour img-rounded img-responsive fullimg">
+              </button>
+                  <!-- start modal -->
+                <div class="modal fade" id="drinksModal" tabindex="-1" role="dialog" aria-labelledby="drinksModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-drinks" id="drinksModal">Slurpy Selections</h4>
+                      </div>
+                      <div class="modal-body">
+  <!-- begin accordian -->
+                        <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Chillers 
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                Mocha Vanilla Caramel Cappuccino Frozen Hot Chocolate
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                              <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Fountain and Bottled Products
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                Coke, Pepsi & Diet Pepsi, Diet Coke, Sprite, Mountain Dew, Red Bull, Water, Fiji Water, Fitz’s Root Beer Flavors, Naked Juices, OJ, Lemonade
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Adult Beverages 
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                <table style="width:100%">
+                                  <tr>
+                                    <td>Coffees with Liqueur - Irish Coffee – Bailey's & Jaimeson</td> 
+                                    <td>$</td>
+                                  </tr>
 
+                                  <tr>
+                                    <td>Alpine Coffee – Peppermint Schnapps Jamaican Coffee – Bacardi & Kahlua</td> 
+                                    <td>$</td>
+                                  </tr>
 
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
-          <p><center>Owner Denis Gorg also owns an events management company, Integrated Marketing Solutions and the spirit of entertainment certainly caries over into Coffee Cartel. We proudly host local musicians, fundraiser events, monopoly tournaments, and all sorts of other events. To see upcoming events and find out how to get involved check out our <a rel="nofollow" href="https://www.facebook.com/pages/Coffee-Cartel/170181316633" class="link-facebook_events">Facebook page<span class="socialmedia"></span></a> or subscribe to our monthly electronic events newsletter. If you are interested in having an event at Coffee Cartel please <a href="mailto:dennis@thecoffeecartel.com" class="link-contactus">contact us.</a> </center> </p> 
-        </div>
-      </div> <!-- row end -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2><center>Philanthropy</center></h2>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
-          <p><center>We are a locally owned and run business hence our motto: Coffee Cartel - its a St. Louis Thing! We strive to support other local businesses and the community that continually supports us. In effort to support a wide variety of charity organizations and to give back to the St. Louis Community, we have hosted fundraisers, donated to, and sponsored over 290 groups in 2014 alone. If you are seeking our help please contact us at <a href="mailto:http://charity@thecoffeecartel.com/" class="link-charityContact">http://charity@thecoffeecartel.com/</a>. We request that you do not call the store for this purpose. </center></p> 
-        </div>
-      </div> <!-- row end -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2><center>General & Awards</center></h2>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
-          <p><center>The Coffee Cartel is open 24 hour per day, 7 days a week, and we never close. We are open every holiday thanks to the dedicated work of our team members. Cartel provides free wireless internet, free high speed plug ins. With 240 seats and a large patio, there’s most always a place to socialize and capture the atmosphere of the neighborhood and the people here.</center></p> 
-        </div>
-      </div> <!-- row end -->
+                                  <tr>
+                                    <td>Fragile Baby – Bailey's & Frangelico Swiss Mocha (House Special)</td> 
+                                    <td>$</td>
+                                  </tr>
 
-     </div> <!-- container end -->
-    </div> <!-- pill-pane end -->
+                                  <tr>
+                                    <td>Kahlua & Frangelico Nutty Irishman – Bailey's, Frangelico, & Jaimeson (House Special)</td> 
+                                    <td>$</td>
+                                  </tr>
 
-    <div role="tabpanel" class="pill-pane" id="shop">
-      <div class="container shopinfo">
-      <div class="row">
-      <div class="col-sm-12">
-        <h1><center>Shop!</center></h1>
+                                  <tr>
+                                    <td>Crazy Cappuccino – Kahlua, Frangelico, & Bailey's </td> 
+                                    <td>$</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>Amaretto Nut Mocha – DiSaronno & Frangelico</td> 
+                                    <td>$</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>Frappes with Liqueur - Bailey's Blizzard Candy Bar Amaretto Fudge </td> 
+                                    <td>$</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>Vodka - Rum - Tequila - Whisky</td> 
+                                    <td>$</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>Disaronno Frape, shake, smoothie, colada</td> 
+                                    <td>$</td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                              <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  Brewed Coffee 
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                              <div class="panel-body">
+                                <table style="width:100%">
+                                <th>We offer a Columbian medium roast, an Ethiopian dark roast, a decaf Columbian medium roast, and a flavored coffee, which differs from day to day.</th>
+                                
+                                <tr>
+                                  <td>Cafe Au Lait – Brewed coffee with steamed milk.</td>
+                                  <td>$</td>
+                                </tr>
+                                  
+                                  <tr>
+                                  <td>Café Americano – Espresso with water</td>
+                                  <td>$</td>
+                                </tr>
+                                  
+                                  <tr>
+                                  <td>Cappuccino – Espresso, steamed milk, and foamed milk</td>
+                                  <td>$</td>
+                                </tr>
+                                  
+                                <tr>
+                                  <td>Café Mocha – Espresso, steamed milk, and chocolate. Also available with white chocolate.</td>
+                                  <td>$</td>
+                                </tr>
+                                  
+                                <tr>
+                                  <td>Thai Iced Coffee – Espresso, sweetened condensed milk, and ice. Very sweet, and very strong.</td>
+                                  <td>$</td>
+                                </tr>
+                                
+                                <tr>
+                                  <td>House Specials – Our house specials are lattes with flavor combinations and an extra shot of espresso.Honey Nut Honey Vanilla Blackberry Caramel German Chocolate 
+                                      White Chocolate Caramel Grasshopper Hopscotch Hazilla 
+                                      Cafe Con Leche Butter Cream Raspberry Truffle Turtle Candy 
+                                      Cherry Bomb Spicy Mocha Iced Monkey Mocha Toblerone Candy
+                                      and more!</td>
+                                  <td>$</td>
+                                </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  Espresso
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                              <div class="panel-body">
+                              <table style="width:100%">
+                                <tr>
+                                  <td>Italian Espresso Shot – A plain, unadorned shot of espresso.</td> 
+                                  <td>$</td>
+                                </tr>
+
+                                <tr>
+                                  <td>Espresso Con Panna – An espresso shot topped with whipped cream</td> 
+                                  <td>$</td>
+                                </tr>
+
+                                <tr>
+                                  <td>Espresso Macchiato – And espresso shot topped with foamed milk</td> 
+                                  <td>$</td>
+                                </tr>
+                              </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+       			  </div>
+      		  </div>
+          </div> 
+        </div><!-- (end row) -->
+      </div> 
+    </div> 
+
+  	<div role="tabpanel" class="pill-pane " id="about">
+    <a name="about"></a>
+      <!-- info about the restaurant, there will be a section about history/culture, a section on philanthropy and working with various community service groups --> 
+      <div class="aboutTitleBreak">
+        <div class="row col-sm-12"> 
+          <h1><center>About</center></h1>
+        </div>
       </div>
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
-          <h2><center>...</center></h2>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
-          <p><center><a rel="nofollow" href="https://squareup.com/market/coffee-cartel-ltd" class="link-store"><img src="images/gift-cert-icon-large2.png" alt="gift card image"><span class="link-gifts"></span></a></center></p> 
-        </div>
-      </div> <!-- row end -->
-    </div>
-  </div>
-   
-      
- </div>
+      <div class="container aboutInfo">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
+            <h2><center>History</center></h2>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
+            <p><center>Coffee Cartel was founded in 1996 and is owned by Denis Gorg. We are located at the corner of Maryland Plaza and Euclid Avenue in the historic Central West End. This neighborhood is a hot spot for people of all ages seeking out St. Louis style events and culture or searching for eclectic food options and a unique ambiance. The neighborhood features victorian homes alongside european style cafes, shops, and restaurants. We find ourselves fulfilling many rolls in this part of town as a cafe, coffee shop, ice cream strore, and tea palace!</center></p> 
+          </div>
+        </div> <!-- row end -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
+            <h2><center>Events</center></h2>
 
+          <!--  immage button -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#eventsModal">
+                <h5><center>Monthly Events Newsletter</center></h5>
+                <p><center>Subscribe!!!</center></p>
+              </button>
+                  <!-- start modal -->
+                <div class="modal fade" id="eventsModal" tabindex="-1" role="dialog" aria-labelledby="drinksModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="newsletter" id="subscribe_events">Please Complete Form</h4>
+                      </div>
+                      <div class="container modal-body">
+                      <header class="modal_events_header">Fields marked with an "*" are mandatory </header>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            *<input type="text" class="form-control firstName" placeholder="First Name">
+                          </div>
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            *<input type="text" class="form-control lastName" placeholder="Last Name">
+                          </div>
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            *<input type="text" class="form-control customeremail" placeholder="email@gmail.com">
+                          </div>
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            <input type="text" class="form-control customerphone" placeholder="(333) 333-3333">
+                          </div>
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">Enter your birthday for special birthday gifts, offers, and discounts!<br>
+                            <input type="text" class="form-control customeremail" placeholder="03/25/1985">
+                          </div> 
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">Enter recomendations for what type of events you would like to see or reasons why you are subscribing to this form. <br>
+                            <input type="text" class="form-control customeremail" placeholder="I'd like to see...">
+                          </div> 
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
+            <p><center>Owner Denis Gorg also owns an events management company, Integrated Marketing Solutions and the spirit of entertainment certainly caries over into Coffee Cartel. We proudly host local musicians, fundraiser events, monopoly tournaments, and all sorts of other events. To see upcoming events and find out how to get involved check out our <a rel="nofollow" href="https://www.facebook.com/pages/Coffee-Cartel/170181316633" class="link-facebook_events">Facebook page<span class="socialmedia"></span></a> or subscribe to our monthly electronic events newsletter. If you are interested in having an event at Coffee Cartel please <a href="mailto:dennis@thecoffeecartel.com" class="link-contactus">contact us.</a> </center> </p> 
+          </div>
+        </div> <!-- row end -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
+            <h2><center>Philanthropy</center></h2>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
+            <p><center>We are a locally owned and run business hence our motto: Coffee Cartel - its a St. Louis Thing! We strive to support other local businesses and the community that continually supports us. In effort to support a wide variety of charity organizations and to give back to the St. Louis Community, we have hosted fundraisers, donated to, and sponsored over 290 groups in 2014 alone. If you are seeking our help please contact us at <a href="mailto:http://charity@thecoffeecartel.com/" class="link-charityContact">http://charity@thecoffeecartel.com/</a>. We request that you do not call the store for this purpose. </center></p> 
+          </div>
+        </div> <!-- row end -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
+            <h2><center>General & Awards</center></h2>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
+            <p><center>The Coffee Cartel is open 24 hour per day, 7 days a week, and we never close. We are open every holiday thanks to the dedicated work of our team members. Cartel provides free wireless internet, free high speed plug ins. With 240 seats and a large patio, there’s most always a place to socialize and capture the atmosphere of the neighborhood and the people here.</center></p> 
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-8 col-md-offset-2">
+           
+            <!-- start carousel -->
+            <div id="carousel-awards-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-awards-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-awards-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-awards-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="http://placehold.it/550x250" alt="image of...">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          <div class="item">
+            <img src="http://placehold.it/550x250" alt="image of...">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          <div class="item">
+        <img src="http://placehold.it/550x250" alt="...">
+        <div class="carousel-caption">
+          <h3>...</h3>
+          <p>...</p>
+        </div>
+      </div> <!-- check what this ends else -->
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-awards-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-awards-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-10 col-md-offset-1">
+          <p><center>Check out some of the awards we have recieved over the past years. Thank you to all of you who have supported us and made our successes possible!</center></p>
+          </div>
+        </div> <!-- row end maybe not -->
+
+       </div> <!-- container end -->
+      </div> <!-- pill-pane end -->
+
+      <div role="tabpanel" class="pill-pane " id="shop">
+      <a name="shop"></a>
+        <div class="container shopinfo">
+        <div class="row">
+        <div class="col-sm-12">
+          <h1><center>Shop!</center></h1>
+        </div>
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 ">
+            <p><center>Check out our online store! You can find our delicious branded coffee roasts and blends. Occasionaly we sell apparell in accordance with our events. To recieve email notifications when we add new items to our store please subscribe <!--  immage button -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#storeEmailModal">
+                <p><center>here</center></p>
+              </button>
+                  <!-- start modal -->
+                <div class="modal fade" id="storeEmailModal" tabindex="-1" role="dialog" aria-labelledby="storeEmailModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="newsletter" id="subscribe_events">Please Complete Form</h4>
+                      </div>
+                      <div class="container modal-body">
+                      <header class="modal_events_header">Fields marked with an "*" are mandatory </header>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            *<input type="text" class="form-control firstName" placeholder="First Name">
+                          </div>
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            *<input type="text" class="form-control lastName" placeholder="Last Name">
+                          </div>
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            *<input type="text" class="form-control customeremail" placeholder="email@gmail.com">
+                          </div>
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">
+                            <input type="text" class="form-control customerphone" placeholder="(333) 333-3333">
+                          </div>
+                        </form>
+                        <form class="navbar-form navbar-left" role="search">
+                          <div class="form-group">Enter recomendations for what type of items you would like to see us add to the store.
+                           <br>
+                            <input type="text" class="form-control customeremail" placeholder="I'd like to see...">
+                          </div> 
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </center></p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4 col-md-offset-2">
+            <p><center><a rel="nofollow" href="https://squareup.com/market/coffee-cartel-ltd" class="link-store"><img src="images/gift-cert-icon-large2.png" alt="gift card image"><span class="link-gifts"></span></a></center></p> 
+          </div>
+        </div> <!-- row end -->
+      </div>
     </div>
+     <a href="#top"> back to top. </a>
+     <p>Careers - applications only available in store.</p>
+     <p>Write a Review! <a rel="nofollow" href="http://www.yelp.com/biz/coffee-cartel-saint-louis-2" class="link-yelp">YELP!</a></p>
+     <img src="images/logo_transparent.png" alt="Cartel Logo" class="logo img-responsive"></img>
+   </div>
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

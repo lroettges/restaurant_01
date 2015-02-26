@@ -4,6 +4,10 @@ body {
 	margin:0px;
 	position:relative;
 }
+/*div.nav_bar {
+	position: fixed;
+	z-index: 10;
+}*/
 div.container{
 	padding:0px;
 	margin:0px;
@@ -49,4 +53,7 @@ div.container{
 padding: 1px;
 /*background-color: #f34;*/
 border: none;
+}
+img.logo {
+	max-height:100px;
 }
