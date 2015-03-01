@@ -89,9 +89,9 @@ div.container{
 	padding: 0px;
 }*/
 .thumbnail {
-/*display: block;*/
+
 padding: 1px;
-/*background-color: #f34;*/
+background-color: transparent;
 border: none;
 }
 
