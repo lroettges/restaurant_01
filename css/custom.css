@@ -39,6 +39,15 @@ h1, h1 , h2, h3, h4 {
 	 font-family: mySecondFont;
 	color: #E5D4D4;
 }
+/*#E67E00*/
+a {
+color: 	#E67E00;
+/*font-weight: bold;*/
+text-transform: uppercase;
+}
+a:hover, a:focus {
+color: #009092;
+}
 
 div.nav_bar div.stickyNav.col-sm-12 img {
 	position: fixed;
@@ -47,13 +56,16 @@ div.nav_bar div.stickyNav.col-sm-12 img {
 	z-index: 10;
 	margin-left: 5px;
 	max-height: 170px;
+	opacity:.7;
 }
 div.nav_bar div.stickyNav.col-sm-12 div.stickyText {
 	position: fixed;
 	top:54px;
-	left: 35px;
+	left: 30px;
 	z-index: 11;
 	}
+
+
 
 /*div.nav_bar div.stickyNav @.col-xs-12 img{
 	position: absolute;
@@ -90,7 +102,7 @@ div.container{
 
 #home header div.homeInfo {
 	position:absolute;
-	top: 4%;
+	top: 5.5%;
 	background-color: rgba(100, 50, 30, .65);
 	color: white;
 	
@@ -127,9 +139,25 @@ margin-right: auto
 }
 
 .btn-primary {
-color: black;
-background-color: transparent; 
-border-color: transparent; 
+color: #E5D4D4;
+background-color: rgba(140,60,90,.5); 
+border-color: #E5D4D4; 
+}
+.btn-primary:hover {
+	background-color: rgba(20,20,20,.5);
+	border-color: rgba(20,20,20,.9);
+}
+
+#menu div.menuTitleBreak div.row{
+	background-image: url("../images/utensils_transparent.png");
+	background-repeat: repeat-x;
+	}
+#menu div.menuTitleBreak div.text {
+		margin:80px 0px 90px;
+		color: #EFE3E3;
+}
+#menu div.menuTitleBreak div.text h1{
+		color: #EFE3E3;
 }
 
 .carousel-indicators {
