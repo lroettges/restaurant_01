@@ -89,7 +89,6 @@ div.container{
 	padding: 0px;
 }*/
 .thumbnail {
-
 padding: 1px;
 background-color: transparent;
 border: none;
@@ -106,6 +105,21 @@ margin-right: auto
 color: black;
 background-color: transparent; 
 border-color: transparent; 
+}
+
+.carousel-indicators {
+bottom: 5px;
+padding-left: 0px;
+}
+
+ul, ol {
+margin-top: 0;
+margin-bottom: 0px;
+}
+
+#carousel-awards-generic > div > div.item.active > div > h2 {
+	position: relative;
+	top:20px;
 }
 
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, 
