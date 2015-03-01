@@ -1,9 +1,48 @@
 /*custom worksheet*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(../simplicity/simplicity.ttf);
+}
 body {
 	padding:0px;
 	margin:0px;
 	position:relative;
+	background-image: url("../wood_vertical_color.jpg");
+	background-repeat: repeat-y;
+	background-size: 100%;
+	font-family: myFirstFont;
+	src: url(../simplicity/simplicity.ttf);
+	font-size: 18px;
+	line-height: 1.42857143;
+	color: #E5D4D4;
 }
+
+h1 {
+	font-size: 300%;
+}
+h2 {
+	font-size: 220%;
+}
+body div.repeating img{
+	z-index:-3; 
+	position: absolute; 
+	max-width:100%;
+}
+
+body div.repeating img.backgroundrepeatOne{
+	position: absolute; 
+	top:0%; 
+}
+@font-face {
+    font-family: mySecondFont;
+    src: url(../AmaticSC-Regular.ttf);
+}
+h1, h1 center, h2 center {
+	/*font-family:"Courier New", Courier, monospace;*/
+	 font-family: mySecondFont;
+	color: #E5D4D4;
+}
+
 /*div.nav_bar {
 	position: fixed;
 	z-index: 10;
@@ -19,6 +58,7 @@ div.container{
 	margin:0px;
 	width:100%;
 }*/
+
 
 #home header div.homeInfo {
 	position:absolute;
@@ -54,6 +94,39 @@ padding: 1px;
 /*background-color: #f34;*/
 border: none;
 }
-img.logo {
+
+.btn-group-lg>.btn, .btn-lg {
+padding: 0px;
+display: block;
+margin-left: auto;
+margin-right: auto
+}
+
+.btn-primary {
+color: black;
+background-color: transparent; 
+border-color: transparent; 
+}
+
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, 
+.btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary{
+
+}
+
+#carousel-awards-generic{
+	width: 100%;
+}
+
+.carousel-inner .item a img, 
+.carousel-inner .item img, .img-responsive, .thumbnail 
+a img, .thumbnail img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+height: auto;
+}
+
+div.endBlock img.logo {
 	max-height:100px;
 }
