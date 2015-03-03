@@ -28,6 +28,14 @@ body {
 h1 {font-size: 300%;}
 h2 {font-size: 220%;}
 
+#about > div.container.aboutInfo > div > img {
+	max-height: 20px;
+margin:5px 0px 80px;}
+#about > div.container.aboutInfo > div > div.cbean.col-xs-12 > img {
+	max-height: 20px;
+margin:5px 0px 80px;}
+
+
 @font-face {
     font-family: mySecondFont;
     src: url(../AmaticSC-Regular.ttf);
@@ -64,6 +72,11 @@ div.nav_bar div.stickyText.stickyNav.col-xs-12.col-sm-12  {
 	top: 235px;
 	}
 
+body div.nav_bar ul div.stickyText.stickyNav.col-xs-12.col-sm-12 a {
+	color: #352C20;
+
+}
+
 /*div.nav_bar div.stickyNav.col-sm-12 img {
 	position: fixed;
 	top:0px;
@@ -79,7 +92,6 @@ div.nav_bar div.stickyNav.col-sm-12 div.stickyText {
 	left: 30px;
 	z-index: 11;
 	}*/
-
 div.container{
 	padding:0px;
 	margin:0px;
@@ -88,7 +100,7 @@ div.container{
 
 #home header div.homeInfo {
 	position:absolute;
-	top: 8.1%;
+	top: 7.5%;
 	background-color: rgba(100, 50, 30, .65);
 	color: white;
 }
