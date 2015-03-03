@@ -7,9 +7,9 @@ body {
 	padding:0px;
 	margin:0px;
 	position:relative;
-	background-image: url("../wood_vertical_color.jpg");
-	background-repeat: repeat-y;
-	background-size: 100%;
+	background-image: url("../wood_vertical_color.png");
+	background-repeat: repeat-y repeat-x;
+	background-size: 50%;
 	font-family: myFirstFont;
 	src: url(../simplicity/simplicity.ttf);
 	font-size: 18px;
@@ -227,7 +227,6 @@ div.endBlock img.logo {
 }
 div.endBlock div.endimage img{
 	position: absolute;
-	left:0;
 	width:100%;
 	max-height: 6%;
 	z-index: -6;
