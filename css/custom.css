@@ -177,7 +177,7 @@ form div.form-group{
 }
 
 div div div.carousel {
-	margin-bottom: 25px;
+	margin: 25px 0px;
 }
 
 .carousel-indicators {
@@ -219,6 +219,29 @@ height: auto;
 	margin-left: auto;
 }
 
+#shop div.shopinfo div.row {
+	padding:30% 0px 37%;
+background-image: url("../images/coffeeBeans_circle.png");
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+#shop div.shopinfo div.row div p,
+#shop div.shopinfo div.row div h1 {
+	background-color: rgba(150,150,170,.4);
+	margin-right: 30%;
+	margin-left: 30%;
+}
+
+#shop div.shopinfo div.row div.col-xs-12.giftlink {
+margin-top: 7%;
+}
+
+#shop div div div.col-xs-12
+ a img {
+ 	max-height: 150px;
+ }
+
 div.endBlock {
 	background-image: url("../images/wood_vertical_desaturated.jpg");
 	background-size: 150%;
@@ -257,13 +280,35 @@ div.endBlock img.logo {
 		max-height: 170px;
 		opacity:.6;
 	}
+
 }
 @media only screen and (max-width: 750px) {
 
 	div.nav_bar ul {
 		margin-bottom: 500px;
 	}
+
 }
+
+@media only screen and (max-width: 700px) {
+	#shop div.shopinfo div.row {
+	padding: 50px 0px 20%;
+}
+
+#shop div.shopinfo div.row div.col-xs-12.giftlink {
+	margin-top: 65%;
+}
+	}
+
+@media only screen and (max-width: 460px) {
+#shop div.shopinfo div.row {
+	padding: 0px 0px 10%;
+}
+
+#shop div.shopinfo div.row div.col-xs-12.giftlink {
+	margin-top: 24%;
+}
+	}
 
 
 
